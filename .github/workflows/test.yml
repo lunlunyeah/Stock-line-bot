@@ -1,0 +1,17 @@
+name: Hello GitHub Actions
+
+on:
+  workflow_dispatch:
+
+jobs:
+
+  hello:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: 印出測試訊息
+        run: |
+          echo "Hello Derrick"
+          echo "GitHub Actions 成功執行"
