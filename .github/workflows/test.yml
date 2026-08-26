@@ -4,7 +4,6 @@ on:
   workflow_dispatch:
 
 jobs:
-
   test:
 
     runs-on: ubuntu-latest
@@ -17,7 +16,7 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: 執行測試
+      - name: 執行 Python
         env:
           CHANNEL_ACCESS_TOKEN: ${{ secrets.CHANNEL_ACCESS_TOKEN }}
 
